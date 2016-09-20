@@ -44,3 +44,11 @@ if (question4 === 'YES' || question4 ==='Y'){
 } else {
   console.log('user answered question 4 incorrectly');
 }
+
+var question5 = prompt('Did I attend a public elementary school?').toUpperCase();
+
+if (question5 === 'NO' || question5 === 'N'){
+  console.log('user answered question 5 correctly');
+} else {
+  console.log('user answered question 5 incorrectly');
+}
