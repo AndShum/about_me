@@ -36,3 +36,11 @@ if (question3 === 'NO' || question3 === 'N'){
 } else {
   console.log('ser answered question 3 incorrectly');
 }
+
+var question4 = prompt('Did I have a mixed breed dog when I was growing up?').toUpperCase();
+
+if (question4 === 'YES' || question4 ==='Y'){
+  console.log('user answered question 4 correctly');
+} else {
+  console.log('user answered question 4 incorrectly');
+}
