@@ -33,6 +33,23 @@ article {
 
 }
 
+aside {
+  float: right;
+  width: 40%;
+  margin: 0 auto;
+  padding: 105px 0;
+  background-color: #585858
+}
+
+.gameLink {
+  color: white;
+  text-align: center;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 60px;
+  width: 0 auto;
+}
+
+
 h2 {
   width: 200px;
   margin: 0 auto;
@@ -65,6 +82,23 @@ a {
 
 a :hover {
   color: #808080;
+}
+
+.content {
+
+  background-color: #e8e8e8;
+  margin: 20px 0;
+
+
+}
+
+.content p {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: 'Kreon', serif;
+
 }
 
 .answer {
