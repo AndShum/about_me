@@ -24,10 +24,11 @@ img {
   margin: 0 auto;
 }
 
-.content {
-  width: 100%;
+article {
+  width: 60%;
   margin: 0;
   padding: 60px 0;
+  float: left;
   background-color: #e8e8e8;
 
 }
@@ -46,15 +47,17 @@ h2 {
 
 
 p {
-  font-family: 'Hammersmith One', sans-serif;
-  font-weight: lighter;
+  font-family: 'Kreon', serif;
+  font-weight: bold;
   font-size: 20px;
   width: 550px;
-  margin: 15px auto;
+  margin: 15px 5%;
   display: block;
-  text-align: center;
 }
 
+strong {
+  font-size: 40px;
+}
 a {
   text-decoration: none;
   color: black;
