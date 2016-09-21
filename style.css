@@ -16,36 +16,56 @@ h1 {
   text-align: center;
 }
 
-img {
+.profilePic {
   max-width: 100%;
-  width: 200px;
+  width: 300px;
   border-radius: 50%;
   display: block;
+  margin: 0 auto -100px;
+  position:relative;
+  z-index: -1;
+
+}
+
+img {
+  padding: 0;
+  margin: 20px auto 50px;
+}
+
+.mainContent {
+  border-top-style: solid;
+  border-top-width: thin;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  overflow: hidden;
+}
+.gallery {
+  display: block;
+  width: 750px;
   margin: 0 auto;
 }
 
 article {
   width: 60%;
   margin: 0;
-  padding: 60px 0;
+  /*padding: 60px 0;*/
   float: left;
-  background-color: #e8e8e8;
-
+  background-color: white;
 }
 
 aside {
   float: right;
   width: 40%;
   margin: 0 auto;
-  padding: 105px 0;
-  background-color: #585858
+
+  background-color: #585858;
 }
 
 .gameLink {
   color: white;
   text-align: center;
   font-family: 'Hammersmith One', sans-serif;
-  font-size: 60px;
+  font-size: 55px;
   width: 0 auto;
 }
 
@@ -62,12 +82,21 @@ h2 {
 
 }
 
+h3 {
+  width: 200px;
+  margin: 0 auto;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 30px;
+
+
+}
 
 p {
   font-family: 'Kreon', serif;
   font-weight: bold;
   font-size: 20px;
-  width: 550px;
   margin: 15px 5%;
   display: block;
 }
@@ -98,9 +127,12 @@ a :hover {
   margin: 0 auto;
   padding: 10px;
   font-family: 'Kreon', serif;
-
 }
 
+
+.content a {
+  text-decoration: underline;
+}
 .answer {
   font-family: 'Hammersmith One', sans-serif;
   font-size: 200px;
@@ -108,4 +140,11 @@ a :hover {
   width: 320px;
   display: block;
   margin: 0 auto;
+}
+
+.funLovin p {
+  clear: both;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 100px;
 }
