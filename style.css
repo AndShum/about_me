@@ -148,3 +148,20 @@ a :hover {
   font-size: 2em;
   margin-top: 100px;
 }
+
+.work_education_list {
+  float:left;
+}
+
+.workTitle {
+  font-family: 'Hammersmith One', sans-serif;
+  width: 500px;
+  text-align: center;
+  font-size: 1.75em
+
+}
+
+.workUL {
+  font-family: 'Hammersmith One', sans-serif;
+
+}
