@@ -27,6 +27,18 @@ h1 {
 
 }
 
+.gameProfilePic {
+    max-width: 100%;
+    width: 275px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto -225px;
+    opacity: 0.3;
+    position: relative;
+    z-index: -1;
+  }
+}
+
 img {
   padding: 0;
   margin: 20px auto 50px;
@@ -41,8 +53,43 @@ img {
 }
 .gallery {
   display: block;
-  width: 750px;
-  margin: 0 auto;
+  /*width: 750px;*/
+  margin: 0;
+  padding: 0;
+}
+
+.answersCorrect1 {
+  text-align: center;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 60px;
+  margin: 0;
+}
+
+.answersCorrect2 {
+  text-align: center;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 60px;
+  margin-top: 50px;
+}
+
+.links {
+  font-family: 'Hammersmith One', sans-serif;
+  text-align: center;
+  font-size: 25px;
+  text-decoration: none;
+
+}
+
+.links a:hover {
+  color: #808080;
+  font-size: 25px;
+  text-decoration: none;
+}
+.gallery img {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  width: 33.33%;
 }
 
 article {
@@ -146,22 +193,57 @@ a :hover {
   clear: both;
   text-align: center;
   font-size: 2em;
-  margin-top: 100px;
+  margin: 30px auto;
 }
 
 .work_education_list {
   float:left;
+  width: 50%;
+  margin-top: 30px;
 }
 
 .workTitle {
   font-family: 'Hammersmith One', sans-serif;
   width: 500px;
   text-align: center;
-  font-size: 1.75em
+  font-size: 1.75em;
+  display: block;
+  margin: 0 auto;
 
 }
 
 .workUL {
   font-family: 'Hammersmith One', sans-serif;
+  text-align: right;
+  list-style: none;
+  padding-right: 40px;
 
+}
+
+.fav_movie_list {
+  float: right;
+  width: 50%;
+}
+
+.moviesTitle {
+  font-family: 'Hammersmith One', sans-serif;
+  width: 500px;
+  text-align: center;
+  font-size: 1.75em;
+  display: block;
+  margin: 30px auto;
+}
+
+.movieUL {
+  font-family: 'Hammersmith One', sans-serif;
+  text-align: left;
+  list-style: none;
+}
+
+#JStext {
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 125px;
+  text-align: center;
+  color: red;
+  margin-top: -100px;
 }

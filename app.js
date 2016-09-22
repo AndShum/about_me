@@ -78,15 +78,6 @@ while (answer === false && counter < 4){
   }
 }
 
-// if (answer6 === 0){
-//   alert('Correct!');
-//   correctAnswers += 1;
-//   console.log('user answered question 6 correctly. Currently ' + correctAnswers + ' of 7 answers correct.');
-// } else {
-//   alert('Incorrect');
-//   console.log('user answered question 6 incorrectly. Currently ' + correctAnswers + ' of 7 answers correct.');
-// }
-
 var multiChoice = ['MEXICO', 'CANADA', 'THAILAND', 'JAPAN'];
 counter = 0;
 answer = false;
@@ -108,11 +99,4 @@ while (answer === false && counter < 6) {
   }
 }
 
-
-if (correctAnswers <= 3){
-  alert(correctAnswers + ' out 7 correct? You don\'t know me at all do you?');
-} else if (correctAnswers <= 5){
-  alert(correctAnswers + ' out 7 correct. Not too bad, well done.');
-} else {
-  alert(correctAnswers + ' out of 7 correct...why do you know so much about me?');
-}
+document.write('<p id="JStext">' + correctAnswers + '</p>');
