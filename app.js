@@ -1,49 +1,8 @@
 'use strict';
 
-// function yesNoQuiz(){
-//   var a1 = prompt('Was I born in Washington state?').toLowerCase();
-//   var a2 = prompt('Have I ever been to Europe?').toLowerCase();
-//   var a3 = prompt('Am I under 25 years old?').toLowerCase();
-//   var a4 = prompt('Did I have a mixed breed dog when I was growing up?').toLowerCase();
-//   var a5 = prompt('Did I attend a public elementary school?').toLowerCase();
-//
-//   var questions = [a1, a2, a3, a4, a5];
-//
-//   var possibleAnswers = [
-//     ['y', 'yes'],
-//     ['n', 'no'],
-//     ['n', 'no'],
-//     ['y', 'yes'],
-//     ['n', 'no']
-//   ];
-//
-//   var responses = ['Correct!', 'Incorrect.'];
-//
-//   for (var i = 0; i < questions.length; i++) {
-//     var incorrect = true;
-//     for ( var v = 0; v < possibleAnswers[i].length; v++){
-//       if (questions[i] === possibleAnswers[i][v]){
-//         console.log(responses[0]);
-//         incorrect = false;
-//         // break;
-//       }
-//     }
-//   }
-//
-//   if (incorrect === true){
-//     console.log(responses[1]);
-//   }
-//
-// }
-//
-//
-// yesNoQuiz();
-//
+var correctAnswers = 0; //keeps track of the number of questions user has gotten correct
 
-
-
-
-var correctAnswers = 0;
+//asking user to answer question 1
 function homeState(){
   var answer1 = prompt('Was I born in Washington state?').toUpperCase();
 
@@ -59,6 +18,7 @@ function homeState(){
 }
 homeState();
 
+//asking user to answer question 2
 function euroTrip(){
   var answer2 = prompt('Have I ever been to Europe?').toUpperCase();
 
@@ -73,6 +33,7 @@ function euroTrip(){
 }
 euroTrip();
 
+//asking user to answer question 3
 function howOld(){
   var answer3 = prompt('Am I under 25 years old?').toUpperCase();
 
@@ -87,6 +48,7 @@ function howOld(){
 }
 howOld();
 
+//asking user to answer question 4
 function dogBreed(){
   var answer4 = prompt('Did I have a mixed breed dog when I was growing up?').toUpperCase();
 
@@ -101,6 +63,7 @@ function dogBreed(){
 }
 dogBreed();
 
+//asking user to answer question 5
 function publicSchool(){
   var answer5 = prompt('Did I attend a public elementary school?').toUpperCase();
 
@@ -115,11 +78,13 @@ function publicSchool(){
 }
 publicSchool();
 
+//asking user to answer question 6
 function carsCrashed(){
-  var numChoice = 0;
-  var answer = false;
-  var counter = 0;
+  var numChoice = 0; //value of the correct answer
+  var answer = false; //parameter allowing the loop to continue as long as the user guesses are incorrect
+  var counter = 0;//keeps track of how many guesses the user has attempted
 
+//allows the user 4 chances to correctly guess the correct number
   while (answer === false && counter < 4){
     var answer6 = parseInt(prompt('How many cars have I crashed?'));
     for( var i = 0; i < 4; i ++ ){
@@ -139,11 +104,13 @@ function carsCrashed(){
 }
 carsCrashed();
 
+//askking user to answer question 7
 function countriesVisited(){
-  var multiChoice = ['MEXICO', 'CANADA', 'THAILAND', 'JAPAN'];
-  var counter = 0;
-  var answer = false;
+  var multiChoice = ['MEXICO', 'CANADA', 'THAILAND', 'JAPAN'];//values of answers that would be correct
+  var counter = 0;//keeps track of how many guesses the user has attempted
+  var answer = false;//parameter allowing the loop to continue as long as the user guesses are incorrect
 
+//allows the user 6 chances to correctly guess 1 of 4 options
   while (answer === false && counter < 6) {
     var answer7 = prompt('What countries have I visited outside of the U.S.?').toUpperCase();
     for ( var i = 0; i < multiChoice.length; i ++) {
@@ -163,4 +130,5 @@ function countriesVisited(){
 }
 countriesVisited();
 
+//displays the number of correc t answer the user got correct in the center of the screen
 document.write('<p id="JStext">' + correctAnswers + '</p>');
