@@ -97,7 +97,7 @@ function carsCrashed(){
         i = 4;
       }
     } if (answer === false){
-      alert('Incorrect.');
+      alert('Incorrect. Your answer was too high');
       counter ++;
     }
   }
